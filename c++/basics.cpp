@@ -23,7 +23,7 @@ int main() {
     int x = 5;
     double y = 3.14;
     char c = 'A';
-    string s = "Hello";
+    string s = "sk";
 
     // Output
     cout << "x = " << x << ", y = " << y << ", c = " << c << ", s = " << s << endl;
@@ -63,8 +63,8 @@ int main() {
 
     // Class usage
     Person p;
-    p.name = "Alice";
-    p.age = 25;
+    p.name = "Uswa";
+    p.age =19;
     p.introduce();
 
     return 0;
