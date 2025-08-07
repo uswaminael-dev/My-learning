@@ -8,9 +8,9 @@ int main(){
 
     // 1. ARITHMETIC OPERATORS
     // BINARY
-    int a, b, c;
-    cout << "Enter any three numbers: ";
-    cin >> a >> b >> c;
+    int a, b;
+    cout << "Enter any two numbers: ";
+    cin >> a >> b;
 
     int addition = a + b; // +
     cout << "Addition: " << addition << endl;
