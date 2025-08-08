@@ -1,7 +1,6 @@
 #include<iostream>
 using namespace std;
 
-
 int factorial(int num1){
     int product=1;
     for(int i=1;i<=num1;i++){
