@@ -15,3 +15,14 @@ print(var_3)
 
 #= ----> Assignment operator
 
+#variables are the containers used to store data of different datatypes
+
+#taking the input feom the user
+Input=input("What is your name?") #always gives string datatype
+
+
+#how to find the datatype of a variable
+print(type(var_1))
+
+
+'''to be continued'''
