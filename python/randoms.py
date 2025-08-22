@@ -1,24 +1,12 @@
-import random
+file=open('myFile.txt', 'r')
+content = file.read()
+print(content)
+file.close()
 
-fruits=['apple','banana','orange','cherry','mangoes','grapes','kiwi']
-print (fruits)
+file=open('myFile.txt', 'a')
+file.write("Appending a new line.\n")
+file.close()
 
-print (fruits[0]) #getting something in file through indexing
-print (fruits[2])
-
-fruits[0]="watermelon" #changing value at a specific index
-
-print(fruits)
-
-random_fruit=random.choice(fruits) #giving random value from the list mentioned
-print(random_fruit)
-
-random.shuffle(fruits)
-print(fruits)  # random.shuffle() shuffles the list in place and returns None
-
-numbers=[1,2,3,4,5,6,7,8,9,0]
-a=random.uniform(200,900)  #returns a random float between the arguments given
-print(a)
-
-random.shuffle(numbers)
-print(numbers)
+file=open('myFile.txt', 'w')
+file.write("don't start this time , CONTINUE.\n")
+file.close()
