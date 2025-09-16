@@ -12,27 +12,39 @@ public class Practice01{
 
         System.out.println("Hello World!");
 
-        int result= Calculator(num1,num2,operator);
-        System.out.println("The result is;" + result);
+         Calculator(num1,num2,operator);
+        // System.out.println("The result is;" + result);
         
 
     }
-    public static int Calculator(int num1, int num2, char operator){
+    public static void Calculator(int num1, int num2, char operator){
         switch (operator){
-            case '+': int add=(num1 + num2);
-            return add;
-            case '-':int subtraction=(num1 - num2);
-            return subtraction;
-            case '*': int product= (num1 * num2);
-            return product;
-            case '/': if (num2==0){
+            case '+': 
+            int add=(num1 + num2);
+            System.out.println("The result is:" + add);
+
+
+            break;
+            case '-':
+            int subtraction=(num1 - num2);
+            System.out.println("The result is:" + subtraction);
+            
+            break;
+            case '*':
+             int product= (num1 * num2);
+             System.out.println("The result is:" + product);
+            break;
+            case '/':
+             if (num2==0){
                 System.out.println("Zero Division Error");}
-                else{int division=num1/num2;
-                return division;
+                else{
+                    int division=num1/num2;
+                    System.out.println("The result i:" + division);
+                break;
                 }
             default:
                 System.out.println("Invalid Operation");
-                return 0;
+                break;
 
         }
         
