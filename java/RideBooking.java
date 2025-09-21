@@ -2,7 +2,7 @@ import java.util.*;
 public class RideBooking{
     static Scanner sc = new Scanner (System.in);
     public static void main( String [ ] args){
-        double fare;
+        double fare;  
         System.out.print("Name: ");
         String name = sc.nextLine();
         System.out.print("Enter the distance in km: ");
@@ -10,36 +10,39 @@ public class RideBooking{
         System.out.print("Choose a vehicle type--> Car , Bike , Rickshaw: ");
         String vehicle = sc.next();
 
-        CalculateFare (String vehicle ; double distance;);
-        PrintReceipt(String name ; String vehicle ; double distance ; double fare;);
+        fare = CalculateFare ( vehicle , distance);
+        PrintReceipt( name , vehicle , distance , fare);
     }
 
         public static double CalculateFare (String vehicle , double distance){
+            double fareA = 0.0;
             switch (vehicle){
-                case Car:
-                fare= 50 * distance;
-                return fare;
-                
-                case Bike:
-                fare = 20 * distance;
-                return fare;
-                
-                case Rickshaw:
-                fare = 30 * distance;
-                return fare;
+                case "Car":
+                fareA= 50.0 * distance;
+                break;
+
+                case "Bike":
+                fareA = 20.0 * distance;
+                break;
+
+                case "Rickshaw":
+                fareA = 30.0 * distance;
+                break;
 
                 default:
                     if (distance <= 0){
                         System.out.print("Invalid Distance");
                     }
                     else{
-                        return 0;}
+                        break;}
             }
+            return fareA;
         }
+
             public static void PrintReceipt(String name, String vehicle, double distance , double fare){
-                System.out.print("Passenger : " + name);
-                System.out.print("Vehicle : " + vehicle);
-                System.out.print("Distance : " + distance + "km");
-                System.out.print("Total Fare : " + fare + "PKR");
+                System.out.println("Passenger : " + name);
+                System.out.println("Vehicle : " + vehicle);
+                System.out.println("Distance : " + distance + " km");
+                System.out.println("Total Fare : " + fare + " PKR");
             }
 }
